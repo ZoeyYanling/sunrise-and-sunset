@@ -5,3 +5,13 @@ header {
 .geeting-text {
   color: orange
 }
+
+.hotel-link {
+  padding: 10px 0 10px 0;
+
+}
+.hotel-link a {
+  text-decoration: none;
+  font-size: larger;
+  color: white;
+}
