@@ -1,125 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-
+​
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="Description" content="Enter your description here"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css"/>
-    <title>Sunrise and sunset</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">​
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./assets/style.css"/>
+  ​  <title>Weather Dashboard</title>
 </head>
-
+​
 <body>
-<header class="p-5 mb-4 bg-light">
-    <div class="container">
-        <div class="row align-items-end">
-            <div class="col-12 col-md-9 text-center">
-                <h1 class="geeting-text">Welcome to see sunrise and sunset<br>
-                    @<br>
-                    New Brunswick</h1>
-            </div>
-            <div class="col-12 col-md-3 d-flex flex-column justify-content-between ">
-
-                <button class="btn btn-warning mb-2">About</button>
-                <button class="btn btn-warning mb-2">Contact Us</button>
-                <button class="btn btn-warning mb-2">Subscribe</button>
-            </div>
+  <header class="container-fluid text-center text-white bg-light p-2">
+    <h1>Weather Dashboard</h1>
+  </header>
+​
+  <div class="container-fluid">
+    <div class="row">
+      <aside class="col-lg-3 bg-light">
+        <h5 class="mt-1">Search for a City:</h5>
+        <div class="form-inline form-group">
+          <input class="form-control" type="text" id="search-value" />
+          <button class="btn btn-primary" id="search-button"> <i class="fa fa-search"></i> </button>
         </div>
+​
+        <ul class="list-group history"></ul>
+      </aside>
+​
+      <div class="col-lg-9">
+        <div id="today" class="mt-3"></div>
+        <div id="forecast" class="card-deck mt-3"></div>
+      </div>
     </div>
-</header>
-<main class="container">
-    <section class="row">
-        <div class="col-12 col-md-12">
-            <section class="row justify-content-around">
-                <div class="col-12 col-md-4">
-                    <h2>About Us</h2>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. A deleniti illo amet veniam. Enim
-                        dignissimos
-                        sint,
-                        modi voluptate libero corporis ipsa consectetur commodi dolorum dolores vitae? Odit perspiciatis
-                        iure
-                        placeat.
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, neque ab doloremque, harum
-                        corporis
-                        voluptas explicabo amet culpa, odit autem totam itaque voluptatibus ipsa quos aperiam eius vel?
-                        Commodi,
-                        nesciunt.
-                    </p>
-                </div>
-                <div class="col-12 col-md-8">
-                    <div class="row">
-                        <div class="col">
-                            <input type="text" class="form-control" placeholder="Input place's name"
-                                   aria-label="Place name">
-                        </div>
-                        <div class="col">
-                            <button class="btn btn-primary input-group" type="button" id="search-button">Search</button>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col mt-2">
-                            <!--                <div class="col-sm-12" id="comming-weather">-->
-                            <div id="card-container" class="row text-light text-center">
-                                <div class="col-3 bg-primary text-white me-1 mb-3 p-2 mt-2 rounded">
-                                    <p>01/14/2022</p>
-                                    <p id="weather-icon"></p>
-                                    <p>Temp:<span id="temp"></span></p>
-                                    <p>Wind:<span id="wind"></span></p>
-                                    <p>Humidity:<span id="humidity"></span></p>
-                                </div>
-                                <div class="col bg-primary text-white me-2 mb-3 p-2 mt-2 rounded">
-                                    <div class="row text-center">
-                                        <h3>Today</h3>
-                                        <p>Wed June 7, 2023</p>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <h4>Sunrise</h4>
-                                            <p id="weather-icon"></p>
-                                            <p>4:47 am</p>
-                                            <p>dawn 4:47 am</p>
-                                            <p>Sunrise today in Beijing was at 4:47 AM</p>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <h4>Sunset</h4>
-                                            <p id="weather-icon"></p>
-                                            <p>7:41 am</p>
-                                            <p>dawn 4:47 am</p>
-                                            <p>Sunset today in Beijing was at 7:41 AM</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--                </div>-->
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </section>
-
-    <hr/>
-    <section class="row">
-        <!--      yanling section-->
-
-    </section>
-
-    <div class="row text-light pt-1">
-        <div class="d-flex justify-content-center align-items-center bg-primary col-12 hotel-link"><a
-                href="https://www.booking.com/searchresults.html?ss=New+Brunswick%2C+Canada&efdco=1&label=gen173rf-1FCAEoggI46AdIM1gDaCeIAQGYATG4ARfIAQzYAQHoAQH4AQKIAgGiAg9sb2NhbGhvc3Q6NjMzNDKoAgO4Aqfbo6QGwAIB0gIkNTA0YTE0YWUtNzRmMS00MzJkLTkwMTQtMmY0MzA0MWFiMWQw2AIF4AIB&aid=304142&lang=en-us&sb=1&src_elem=sb&src=index&dest_id=3135&dest_type=region&ac_position=0&ac_click_type=b&ac_langcode=en&ac_suggestion_list_length=5&search_selected=true&search_pageview_id=e6829e13e5c60232&ac_meta=GhBlNjgyOWUxM2U1YzYwMjMyIAAoATICZW46BW5ldyBiQABKAFAA&group_adults=2&no_rooms=1&group_children=0&sb_travel_purpose=leisure">Hotel
-            information</a></div>
-    </div>
-
-</main>
-<footer>
-    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
-        © 2023 Copyright:
-        <a class="text-reset fw-bold" href="https://example.com/">team8.com</a>
-    </div>
-</footer>
+  </div>
+​
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="./assets/script.js"></script>
 </body>
-
+​
 </html>
