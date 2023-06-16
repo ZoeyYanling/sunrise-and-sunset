@@ -22,10 +22,11 @@
                     New Brunswick</h1>
             </div>
             <div class="col-12 col-md-3 d-flex flex-column justify-content-between ">
-
-                <button class="btn btn-warning mb-2">About</button>
-                <button class="btn btn-warning mb-2">Contact Us</button>
-                <button class="btn btn-warning mb-2">Subscribe</button>
+                    <!---Add inpage like--->
+                <button class="btn btn-warning mb-2"><a href="#about-us">About</a></button>
+                <button class="btn btn-warning mb-2"><a href="#contact-us">Contact Us</a></button>
+                <button class="btn btn-warning mb-2"><a href="#subscribe">Subscribe</a></button>
+                
             </div>
         </div>
     </div>
@@ -34,21 +35,15 @@
     <section class="row">
         <div class="col-12 col-md-12">
             <section class="row justify-content-around">
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-4" id="about-us">
                     <h2>About Us</h2>
                     <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. A deleniti illo amet veniam. Enim
-                        dignissimos
-                        sint,
-                        modi voluptate libero corporis ipsa consectetur commodi dolorum dolores vitae? Odit perspiciatis
-                        iure
-                        placeat.
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, neque ab doloremque, harum
-                        corporis
-                        voluptas explicabo amet culpa, odit autem totam itaque voluptatibus ipsa quos aperiam eius vel?
-                        Commodi,
-                        nesciunt.
+                        The mission of Team Eight Company (TEC) is to inspire people to contact nature.
+                        TEC is committed to serving tourists who are keen on sunrise and sunset.
                     </p>
+                        <!---Add a picture match the topic--->>
+                    <img src="./assets/image/sunrise.jpg" alt="sunrise-pic" width="410px" height="250px"/>
+                    
                 </div>
                 <div class="col-12 col-md-8">
                     <div class="row">
@@ -103,10 +98,12 @@
     </section>
 
     <hr/>
-    <section class="row">
+    <section class="row bg-light" id="subscribe">
         <!--      part 5-->
-        <h2>Subscribe and Get Inspired</h2>
-        <h3>Sign up for more travel inspiration and useful tips!</h3>
+        
+        <h2 style="color:#ffbb00">Subscribe and Get Inspired</h2>
+        <h3 style="color:#ffbb00">Sign up for more travel inspiration and useful tips!</h3>
+
         <form class="row g-3">
            <div class="col-md-2">
               <label for="inputName" class="form-label" id="name">Name</label>
@@ -121,7 +118,7 @@
               <input type="text" class="form-control" id="inputInterest"/>
            </div>
            <div class="col-12">
-              <button  class="btn submitBtn btn-primary">Submit</button>
+              <button  class="btn submitBtn btn-warning "><a href="./assets/image/thank6.png">Submit</a></button>
            </div>
         </form>
     </section>
@@ -131,7 +128,17 @@
                 href="https://www.booking.com/searchresults.html?ss=New+Brunswick%2C+Canada&efdco=1&label=gen173rf-1FCAEoggI46AdIM1gDaCeIAQGYATG4ARfIAQzYAQHoAQH4AQKIAgGiAg9sb2NhbGhvc3Q6NjMzNDKoAgO4Aqfbo6QGwAIB0gIkNTA0YTE0YWUtNzRmMS00MzJkLTkwMTQtMmY0MzA0MWFiMWQw2AIF4AIB&aid=304142&lang=en-us&sb=1&src_elem=sb&src=index&dest_id=3135&dest_type=region&ac_position=0&ac_click_type=b&ac_langcode=en&ac_suggestion_list_length=5&search_selected=true&search_pageview_id=e6829e13e5c60232&ac_meta=GhBlNjgyOWUxM2U1YzYwMjMyIAAoATICZW46BW5ldyBiQABKAFAA&group_adults=2&no_rooms=1&group_children=0&sb_travel_purpose=leisure">Hotel
             information</a></div>
     </div>
-
+    <div class="col-12 col-sm-6 col-md-4 bg-light" id="contact-us">
+        <address>
+          <br>
+          <h2>Contact us</h2>
+          <br>
+          <h4>Team Eight Company, Inc.</h4>
+          <br>
+          <p> Tel:<a href="tel:506.230.0000"></a>506.230.0000</a></p>
+          <p>Email:<a href="mailto:info@teameight.com">info@teameight.com</a></p>
+        </address>
+      </div>
 </main>
 <footer>
     <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
