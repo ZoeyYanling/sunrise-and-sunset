@@ -10,14 +10,14 @@ SO THAT I can plan a trip accordingly
  It presents with the city name, the date, time sunrice and time sunset. Subscribe and Get Inspired and related data save in local storage. User can change city and save it in local storage. When user refresh the page сity steal populated in the page. 
 
 ## Gitpage reference
-https://
+https://zoeyyanling.github.io/sunrise-and-sunset/
 
 ## Screen shots
 
 The following scrshots shows the web application's:
 
-![scrshot1](./assets/images/scr1.png)
-![scrshot2](./assets/images/scr2.png)
+![scrshot1](./assets/image/scr1.png)
+![scrshot2](./assets/image/scr2.png)
 
 ## Acceptance Criteria
 GIVEN a Sunset and sunrise with form input
